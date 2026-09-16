@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jarvis AI Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Jarvis Dashboard</h1>
+        <div class="data-box">
+            <p>Time: <span id="time">--:--:--</span></p>
+            <p>Temperature: <span id="temp">--</span>°C</p>
+        </div>
+        <button id="updateBtn">Refresh Data</button>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
